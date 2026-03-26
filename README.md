@@ -121,20 +121,28 @@ GFW（グレートファイアウォール）による UDP ブロックを回避
 ```
 aws-client-vpn-saml-migration/
 │
-├── README.md                          ← このファイル
+├── README.md                              ← このファイル
 │
-├── docs/design/                       設計資料
-│   ├── 01_group_role_mapping.md       ADグループ → OneLoginロール 対応表
-│   ├── 02_parameter_sheet.md          VPN エンドポイント パラメータシート
-│   └── 03_authorization_rules.md      認可ルール 設定作業シート
+├── docs/design/                           設計資料
+│   ├── 01_group_role_mapping.md           ADグループ → OneLoginロール 対応表
+│   ├── 02_parameter_sheet.md              VPN エンドポイント パラメータシート
+│   └── 03_authorization_rules.md          認可ルール 設定作業シート
 │
-├── docs/procedures/                   手順書
-│   ├── step2_onelogin_setup.md        OneLogin ロール作成・SAML設定
-│   ├── step3_ovpn_distribution.md     .ovpn ファイル配布
-│   └── step4_domestic_test.md         国内接続テスト
+├── docs/procedures/                       手順書
+│   ├── step2_onelogin_setup.md            OneLogin ロール作成・SAML設定
+│   ├── step3_ovpn_distribution.md         .ovpn ファイル配布
+│   ├── step4_domestic_test.md             国内接続テスト
+│   └── step6_production_migration.md      本番移行・Cisco VPN 撤去（Phase 2）
 │
-└── docs/test/
-    └── step5_overseas_test.md         海外拠点接続テスト
+├── docs/test/
+│   └── step5_overseas_test.md             海外拠点接続テスト
+│
+├── docs/troubleshooting/
+│   └── saml_troubleshooting_guide.md      SAML 認証 トラブルシューティング
+│
+└── docs/
+    ├── VPN_Migration_PoC_Progress.pptx    進捗レポートスライド
+    └── VPN_Migration_PoC_Progress.pdf     進捗レポート（PDF版）
 ```
 
 ---
